@@ -12,7 +12,7 @@
 
   <tbody>
     <% @to_dos.each do |to_do| %>
-      <tr>
+      <tr id="<%= dom_id(to_do) %>">
         <td><%= to_do.list %></td>
         <td><%= to_do.title %></td>
         <td><%= to_do.description %></td>
